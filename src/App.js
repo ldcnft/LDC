@@ -376,8 +376,9 @@ function App() {
                         +
                       </StyledRoundButton>
                     </s.Container>
+<s.SpacerMedium />
                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
+                      <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -386,9 +387,9 @@ function App() {
                         }}
                       >
                         10
-                      </StyledButton>
+                      </StyledRoundButton>
 <s.SpacerMedium />
-<StyledButton
+<StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -397,9 +398,9 @@ function App() {
                         }}
                       >
                         25
-                      </StyledButton>
+                      </StyledRoundButton>
 <s.SpacerMedium />
-<StyledButton
+<StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -408,7 +409,7 @@ function App() {
                         }}
                       >
                         50
-                      </StyledButton>
+                      </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
