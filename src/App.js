@@ -360,21 +360,20 @@ function App() {
                       >
                         +
                       </StyledRoundButton>
-                    <s.SpacerMedium />
+                    </s.Container>
+                    <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
+                      <StyledButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
-                          decrementMintAmount();
+                          claimNFTs();
+                          getData();
                         }}
                       >
-                        -
-                      </StyledRoundButton>
-                      <s.SpacerMedium />
+                        {claimingNft ? "BUSY" : "BUY"}
+                      </StyledButton>
                     </s.Container>
-                    <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
                         disabled={claimingNft ? 1 : 0}
