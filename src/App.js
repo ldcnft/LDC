@@ -360,7 +360,6 @@ function App() {
                       >
                         +
                       </StyledRoundButton>
-                    </s.Container>
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
@@ -374,6 +373,7 @@ function App() {
                         -
                       </StyledRoundButton>
                       <s.SpacerMedium />
+                    </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
