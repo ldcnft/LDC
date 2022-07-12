@@ -386,10 +386,29 @@ function App() {
                           e.preventDefault();
                           tenMintAmount();
                           getData();
-                          claimNFTs();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY 10"}
+                        {claimingNft ? : "BUY 10"}
+                      </StyledButton>
+<StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          tenMintAmount();
+                          getData();
+                        }}
+                      >
+                        {claimingNft ? : "BUY 25"}
+                      </StyledButton>
+<StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          tenMintAmount();
+                          getData();
+                        }}
+                      >
+                        {claimingNft ? : "BUY 50"}
                       </StyledButton>
                     </s.Container>
                   </>
