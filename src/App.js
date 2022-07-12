@@ -388,7 +388,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? : "BUY 10"}
+                        "BUY 10"
                       </StyledButton>
 <s.SpacerMedium />
 <StyledButton
@@ -399,7 +399,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? : "BUY 25"}
+                        "BUY 25"
                       </StyledButton>
 <s.SpacerMedium />
 <StyledButton
@@ -410,7 +410,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? : "BUY 50"}
+                        "BUY 50"
                       </StyledButton>
                     </s.Container>
                   </>
