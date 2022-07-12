@@ -168,6 +168,17 @@ function App() {
     let newMintAmount = 10;
     setMintAmount(newMintAmount);
   };
+  
+      const twentyfiveMintAmount = () => {
+    let newMintAmount = 25;
+    setMintAmount(newMintAmount);
+  };
+  
+      const fiftyMintAmount = () => {
+    let newMintAmount = 50;
+    setMintAmount(newMintAmount);
+  };
+  
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));
@@ -365,6 +376,40 @@ function App() {
                         +
                       </StyledRoundButton>
                     </s.Container>
+                   <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                      <StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          tenMintAmount();
+                          getData();
+                        }}
+                      >
+                        10
+                      </StyledButton>
+<s.SpacerMedium />
+<StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          twentyfiveMintAmount();
+                          getData();
+                        }}
+                      >
+                        25
+                      </StyledButton>
+<s.SpacerMedium />
+<StyledButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          fiftyMintAmount();
+                          getData();
+                        }}
+                      >
+                        50
+                      </StyledButton>
+                    </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
@@ -379,40 +424,7 @@ function App() {
                       </StyledButton>
                     </s.Container>
 <s.SpacerMedium />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          tenMintAmount();
-                          getData();
-                        }}
-                      >
-                        "BUY 10"
-                      </StyledButton>
-<s.SpacerMedium />
-<StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          tenMintAmount();
-                          getData();
-                        }}
-                      >
-                        "BUY 25"
-                      </StyledButton>
-<s.SpacerMedium />
-<StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          tenMintAmount();
-                          getData();
-                        }}
-                      >
-                        "BUY 50"
-                      </StyledButton>
-                    </s.Container>
+ 
                   </>
                 )}
               </>
