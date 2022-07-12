@@ -390,6 +390,7 @@ function App() {
                       >
                         {claimingNft ? : "BUY 10"}
                       </StyledButton>
+<s.SpacerMedium />
 <StyledButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
@@ -400,6 +401,7 @@ function App() {
                       >
                         {claimingNft ? : "BUY 25"}
                       </StyledButton>
+<s.SpacerMedium />
 <StyledButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
