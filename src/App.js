@@ -164,6 +164,10 @@ function App() {
     setMintAmount(newMintAmount);
   };
 
+    const tenMintAmount = () => {
+    let newMintAmount = 10;
+    setMintAmount(newMintAmount);
+  };
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));
@@ -380,6 +384,7 @@ function App() {
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
+                          tenMintAmount();
                           claimNFTs();
                           getData();
                         }}
