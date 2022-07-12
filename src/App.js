@@ -385,8 +385,8 @@ function App() {
                         onClick={(e) => {
                           e.preventDefault();
                           tenMintAmount();
-                          claimNFTs();
                           getData();
+                          claimNFTs();
                         }}
                       >
                         {claimingNft ? "BUSY" : "BUY 10"}
