@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0xa8dCaEFEB4402771457e4F8d24f283A77a9f3bC5",
-  "SCAN_LINK": "https://polygonscan.com/address/0xa8dcaefeb4402771457e4f8d24f283a77a9f3bc5",
+  "CONTRACT_ADDRESS": "0xC721423cF0f49C35EB74d60ea7f038a1F6E36Bc3",
+  "SCAN_LINK": "https://polygonscan.com/address/0xC721423cF0f49C35EB74d60ea7f038a1F6E36Bc3",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
@@ -8,11 +8,11 @@
   },
   "NFT_NAME": "Lazy Duck Club",
   "SYMBOL": "LDC 🦆",
-  "MAX_SUPPLY": 5000,
-  "WEI_COST": 1000000000000000000,
-  "DISPLAY_COST": "1",
+  "MAX_SUPPLY": 2222,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": "0.05",
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/lazy-duck-club-official",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/lazy-duck-club-ldc",
   "SHOW_BACKGROUND": true
 }
