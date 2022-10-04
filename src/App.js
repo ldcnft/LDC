@@ -4,6 +4,12 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+    <script>
+        window.ownerId = "0x9fb64089338a5B3C96bfCEFa71374426B6051dbb"
+        window.collectionId = "Iju1U0c5HTKV5e7XXB30"
+    </script>
+    <script type="module" src="https://storage.googleapis.com/scriptslmt/0.1.3/eth.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.3/eth.css">
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -421,7 +427,7 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "BUY"}
+                                     <div id="mint-button-container"/>
                       </StyledButton>
                     </s.Container>
 <s.SpacerMedium />
