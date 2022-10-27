@@ -377,7 +377,11 @@ function App() {
                     </s.Container>
 <s.SpacerMedium />
                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
+
+  
+  
+  
+                        <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -388,7 +392,7 @@ function App() {
                         10
                       </StyledRoundButton>
 <s.SpacerMedium />
-<StyledRoundButton
+                      <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -399,7 +403,7 @@ function App() {
                         25
                       </StyledRoundButton>
 <s.SpacerMedium />
-<StyledRoundButton
+                      <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -407,8 +411,13 @@ function App() {
                           getData();
                         }}
                       >
-                        50
+                        Max
                       </StyledRoundButton>
+  
+  
+  
+  
+  
                     </s.Container>
                         
 
@@ -424,7 +433,7 @@ function App() {
                       >
                         {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
-                    </s.Container> 
+                    </s.Container>
                   </>
                 )}
               </>
@@ -450,5 +459,6 @@ function App() {
     </s.Screen>
   );
 }
+
 
 export default App;
