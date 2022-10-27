@@ -411,6 +411,8 @@ function App() {
                         50
                       </StyledRoundButton>
                     </s.Container>
+                        
+
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
@@ -421,11 +423,9 @@ function App() {
                           getData();
                         }}
                       >
-                                   
+                        {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
-                    </s.Container>
-<s.SpacerMedium />
- 
+                    </s.Container> 
                   </>
                 )}
               </>
